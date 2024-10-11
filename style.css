@@ -1,4 +1,5 @@
-@import  url('/img/5592652-abstract-dark-purple-background-vector-overlap-layer-on-dark-space-for-background-design-exclusive-wallpaper-design-for-poster-brochure-presentation-website-etc-vetor.jpg');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 * {
     font-family: Poppins, sans-serif;
     margin: 0;
@@ -6,19 +7,15 @@
     box-sizing: border-box;
 }
 
-
 body {
     background-image: url('/img/5592652-abstract-dark-purple-background-vector-overlap-layer-on-dark-space-for-background-design-exclusive-wallpaper-design-for-poster-brochure-presentation-website-etc-vetor.jpg');
-
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0;
-    font-family: Arial, sans-serif;
     overflow-x: hidden;
-
 }
+
 
 .navbar {
     position: fixed;
