@@ -118,26 +118,18 @@ const timezones = {
 async function buscarHora() {
     const estadoInput = document.getElementById('city_name').value.trim();
     
-    if (estadoInput === '') {
-        alert('Por favor, insira o nome de um estado.');
-        return;
-    }
+  
 
     const estado = Object.keys(timezones).find(key => key.toLowerCase() === estadoInput.toLowerCase());
     
-    if (!estado) {
-        alert('Estado não encontrado. Por favor, insira um estado válido.');
-        return;
-    }
+ 
 
     const timezone = timezones[estado];
 
     try {
         const response = await fetch(`https://worldtimeapi.org/api/timezone/${timezone}`);
         
-        if (!response.ok) {
-            throw new Error('Erro ao buscar o horário.');
-        }
+      
 
         const data = await response.json();
         const dateTime = new Date(data.datetime);
